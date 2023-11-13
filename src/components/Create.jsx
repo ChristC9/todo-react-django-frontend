@@ -12,7 +12,7 @@ const Create = () => {
     e.preventDefault();
     const todo = { title, description };
     setIsPending(true);
-    axios.post('https://nha-todo-list.herokuapp.com/api/create/', todo)
+    axios.post('https://todo-backend-v4re.onrender.com/api/create/', todo)
       .then(() => {
         setIsPending(false);
         history.push('/');

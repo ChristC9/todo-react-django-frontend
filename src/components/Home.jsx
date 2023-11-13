@@ -7,7 +7,7 @@ const Home = () => {
 
     const { data: blogs, isPending, error } = useFetch('https://todo-backend-v4re.onrender.com/api/get/');
     const [message, setMessage] = useState(null);
-    axios.get('https://nha-todo-list.herokuapp.com/api/get/')
+    axios.get('https://todo-backend-v4re.onrender.com/api/get/')
         .then(res => {
             if (res.data.length === 0) {
                 setMessage("No Lists Found");

@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blogs, isPending, error } = useFetch('https://nha-todo-list.herokuapp.com/api/get/' + id + '/');
+  const { data: blogs, isPending, error } = useFetch('https://todo-backend-v4re.onrender.com/api/get/' + id + '/');
   const [loading, setloading] = useState(false);
   const history = useHistory();
   if (!blogs) {

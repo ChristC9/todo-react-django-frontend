@@ -14,7 +14,7 @@ const BlogDetails = () => {
   }
   const deleteBlog = () => {
     setloading(true);
-    axios.delete('https://nha-todo-list.herokuapp.com/api/delete/' + id + '/')
+    axios.delete('https://todo-backend-v4re.onrender.com/api/delete/' + id + '/')
       .then(() => {
         setloading(false);
         history.push('/');

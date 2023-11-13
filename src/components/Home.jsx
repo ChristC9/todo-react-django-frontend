@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Home = () => {
 
-    const { data: blogs, isPending, error } = useFetch('https://nha-todo-list.herokuapp.com/api/get/');
+    const { data: blogs, isPending, error } = useFetch('https://todo-backend-v4re.onrender.com/api/get/');
     const [message, setMessage] = useState(null);
     axios.get('https://nha-todo-list.herokuapp.com/api/get/')
         .then(res => {
